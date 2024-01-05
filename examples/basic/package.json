@@ -1,10 +1,11 @@
 {
   "name": "basic",
   "private": true,
+  "homepage": "/cbniform",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "serve": "vite preview"
+    "dev": "vite --base /cbniform",
+    "build": "tsc && vite build --base /cbniform",
+    "serve": "vite preview --port 9151 --host 0.0.0.0 --base /cbniform"
   },
   "dependencies": {
     "react": "^18.2.0",
