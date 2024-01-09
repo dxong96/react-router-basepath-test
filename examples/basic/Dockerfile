@@ -8,6 +8,12 @@ RUN npm ci
 
 RUN npm run build
 
-EXPOSE 9151
+FROM nginx:mainline-alpine
 
-CMD ["npm", "run", "serve"]
+WORKDIR /app
+
+COPY --from=0 /app/dist .
+
+COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 9151

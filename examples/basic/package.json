@@ -4,8 +4,8 @@
   "homepage": "/cbniform",
   "scripts": {
     "dev": "vite --base /cbniform",
-    "build": "tsc && vite build --base /cbniform",
-    "serve": "vite preview --port 9151 --host 0.0.0.0 --base /cbniform"
+    "build": "tsc && vite build --base /e727",
+    "serve": "vite preview --port 9151 --host 0.0.0.0 --base /e727"
   },
   "dependencies": {
     "react": "^18.2.0",
